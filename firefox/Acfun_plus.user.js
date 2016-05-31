@@ -180,6 +180,7 @@ window.checkword = function (arr, className) {
           $(className).next().next().hide();
           className.style.display = 'none';
           className.parentNode.style.border = 'none';
+          className.parentNode.style.padding = '0px';
           className.parentNode.style.backgroundColor = 'transparent';
         }
         className.setAttribute('disappeared', 'true');
@@ -300,7 +301,8 @@ window.clearUser = function (arr, className) {
         $(className).parent().next().next().next().hide();
         $(className).parent().parent().css({
           'border': 'none',
-          'background-color': 'transparent'
+          'background-color': 'transparent',
+          'padding': '0px',
         });
       } 
       else {
